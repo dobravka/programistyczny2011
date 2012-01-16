@@ -27,7 +27,8 @@
         <activity  android:name=".log_in" android:label="@string/app_name" />
         <activity  android:name=".register" android:label="@string/app_name" />
         <activity  android:name=".calculate" android:label="@string/app_name" />
-        <service android:name="MyService" />
+        <service android:name=".myService" />
+        <activity  android:name=".data" android:label="@string/app_name" />
     </application>
 
 </manifest>
