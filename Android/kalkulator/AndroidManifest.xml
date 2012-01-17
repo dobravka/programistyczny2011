@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pwr.wppt.inf.kalkulator"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-permission 
+        android:name="android.permission.INTERNET" />    
+    <uses-permission 
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-sdk android:minSdkVersion="10" />
+
+    <application
+        
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+		<uses-library android:name="com.google.android.maps"></uses-library> 
+        <activity
+            android:label="@string/app_name"
+            android:name=".Kalkulator" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity  android:name=".Map" android:label="@string/app_name" />
+        <activity  android:name=".log_in" android:label="@string/app_name" />
+        <activity  android:name=".register" android:label="@string/app_name" />
+        <activity  android:name=".calculate" android:label="@string/app_name" />
+        <service android:name=".myService" />
+        <activity  android:name=".data" android:label="@string/app_name" />
+    </application>
+
+</manifest>
